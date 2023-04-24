@@ -1,27 +1,31 @@
-import React from "react";
-import {Button, Box, Paper} from '@material-ui/core'
+import React from 'react';
+import { Typography, Grid, Button } from '@material-ui/core';
+import { Box } from '@mui/material';
 import './Home.css';
-import { flexbox } from "@mui/system";
 
-function Home (){
-    return(
+function Home() {
+    return (
         <>
-        <Paper >
-            <Box p={2}>
-                <Box display="flex" justifyContent="center">
-                    <h1>Titulo</h1>
-                </Box>
-                <img src="https://toppng.com/public/uploads/preview/burger-11528340630dx5paxa77f.png" alt="img" style={{width: "100%", height:"100"}}/>
-                <Box className="A" display="flex" justifyContent="space-around" p={1}>
-                    <Button variant="contained" color="primary">teste 1</Button>
-                    <Button variant="contained" color="secondary">teste 2</Button>
-                </Box>
-            </Box>
-        </Paper> 
+            <Grid container direction="row" className='Container'>
+                <Grid alignItems="center" item xs={6}>
+                    <Box paddingX={20} >
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center"className='titulo'>expresse aqui os seus pensamentos e opiniões!</Typography>
+                    </Box>
+                    <Box display="flex" justifyContent="center">
+                        <Box marginRight={1}>
+                        </Box>
+                        <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                    </Box>
+                </Grid>
+                <Grid item xs={6} >
+                    <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
+                </Grid>
+                <Grid xs={12} className='postagens'>
+                </Grid>
+            </Grid>
         </>
     );
 }
 
 export default Home;
-
-
