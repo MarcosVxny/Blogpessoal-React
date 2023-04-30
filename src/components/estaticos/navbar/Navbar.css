@@ -5,7 +5,11 @@
 
 
 
-
+.bgC{
+    background: rgb(63,81,176);
+}
+  
+  
 .text-decorator-none{
     text-decoration: none;
 }

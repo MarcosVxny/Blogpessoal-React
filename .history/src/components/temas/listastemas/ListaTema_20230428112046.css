@@ -1,0 +1,18 @@
+.text-decorator-none{
+    text-decoration: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* altura mínima do corpo para a página ocupar pelo menos a altura da janela do navegador */
+  }
+  
+  main {
+    flex: 1; /* faz com que o elemento ocupe todo o espaço restante na página */
+  }
+  
+  footer {
+    align-self: flex-end;
+    height: 60px; /* altura do seu rodapé */
+  }
+  
