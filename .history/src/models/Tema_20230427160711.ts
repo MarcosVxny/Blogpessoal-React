@@ -1,4 +1,0 @@
-interface Tema{
-    id: number;
-    
-}
